@@ -16,7 +16,7 @@ router.get('/:id', (req, res) => {
     if(!side)
     {
 
-        res.redirect(`/cards/${id}?side=question`);
+        return res.redirect(`/cards/${id}?side=question`);
     }
     const name = req.cookies.username;
 
